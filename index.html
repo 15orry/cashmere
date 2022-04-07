@@ -12,6 +12,27 @@
     <script>
         new WOW().init();
     </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             $(".IntroMenu").click(function(){
+                 $("html, body").animate({scrollTop:$("#intro.content").offset().top - 80}, 1000);
+                 return false;
+             });
+             $(".StoryMenu").click(function(){
+                 $("html, body").animate({scrollTop:$("#story.content").offset().top - 80}, 1000);
+                 return false;
+             });
+             $(".JournalMnnu").click(function(){
+                 $("html, body").animate({scrollTop:$("#journal.content").offset().top - 80}, 1000);
+                 return false;
+             });
+             $(".StoresMenu").click(function(){
+                 $("html, body").animate({scrollTop:$("#stores.content").offset().top - 80}, 1000);
+                 return false;
+             });
+         });
+     </script>
     
 </head>
 <body>
@@ -45,10 +66,10 @@
                 <div class="menu_part">
                     <nav>
                         <ul>
-                            <li><a href="#">INTRO</a></li>
-                            <li><a href="#">STORY</a></li>
-                            <li><a href="#">JOURNAL</a></li>
-                            <li><a href="#">STORES</a></li>
+                            <li class="IntroMenu"><a href="#">INTRO</a></li>
+                            <li class="StoryMenu"><a href="#">STORY</a></li>
+                            <li class="JournalMnnu"><a href="#">JOURNAL</a></li>
+                            <li class="StoresMenu"><a href="#">STORES</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,7 +106,7 @@
     <!-- content(intro / story) -->
     <section id="bg">
 
-        <div id="intro">
+        <div id="intro" class="content">
             <div class="intro_cont">
                 <h2 class="font_great">Intro</h2>
 
@@ -131,7 +152,7 @@
 
         <div class="bar"></div>
 
-        <div id="story">
+        <div id="story" class="content">
             <h2 class="font_great">Story</h2>
 
             <div class="story_cont">
@@ -181,7 +202,7 @@
 
     <!-- content(Journal / Stores) -->
     <section id="cont_bg">
-        <div id="journal">
+        <div id="journal" class="content">
             <div class="title">
                 <h2 class="font_great">Journal</h2>
             </div>
@@ -232,7 +253,7 @@
 
         <div class="bar"></div>
 
-        <div id="stores">
+        <div id="stores" class="content">
             <div class="title">
                 <h2 class="font_great">Stores</h2>
             </div>
