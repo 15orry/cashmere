@@ -100,7 +100,7 @@ a{text-decoration: none;}
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 70px;
+    padding-right: 35px;
     /* background-color: #fff; */
 }
 #main_banner .dark_cover .wrap h1{
@@ -450,47 +450,41 @@ section #intro .intro_cont .wrap .box .txt_part p{
 #footer .wrap{
     width: 1200px;
     margin: 0 auto;
-    padding: 40px 10px 0;
-
+    padding: 40px 10px 40px;
+}
+#footer .wrap .inwrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-#footer .wrap .logo_part{}
-#footer .wrap .logo_part img{
+#footer .wrap .inwrap .logo_part{width: 200px;}
+#footer .wrap .inwrap .logo_part img{
     display: block;
     height: 80px;
 }
 
-#footer .wrap .info_part{}
-#footer .wrap .info_part ul{
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#footer .wrap .info_part ul li{margin: 0 10px;}
-#footer .wrap .info_part ul li a{
+#footer .wrap .inwrap .info_part{}
+#footer .wrap .inwrap .info_part ul{display: flex;}
+#footer .wrap .inwrap .info_part ul li{margin: 0 10px;}
+#footer .wrap .inwrap .info_part ul li a{
     display: block;
     line-height: 80px;
     font-size: 14px; color: #373735;
 }
-#footer .wrap .info_part ul li:hover a{color: #662021;}
+#footer .wrap .inwrap .info_part ul li:hover a{color: #662021;}
 
-#footer .wrap .sns_part{}
-#footer .wrap .sns_part ul{display: flex;}
-#footer .wrap .sns_part ul li{margin: 0 10px;}
-#footer .wrap .sns_part ul li:last-child{margin-right: 0;}
-#footer .wrap .sns_part ul li a{
-}
-#footer .wrap .sns_part ul li a img{
+#footer .wrap .inwrap .sns_part{width: 200px;}
+#footer .wrap .inwrap .sns_part ul{display: flex; justify-content: flex-end;}
+#footer .wrap .inwrap .sns_part ul li{margin: 0 10px;}
+#footer .wrap .inwrap .sns_part ul li:last-child{margin-right: 0;}
+#footer .wrap .inwrap .sns_part ul li a{line-height: 80px;}
+#footer .wrap .inwrap .sns_part ul li a img{
     display: block;
     height: 30px;
 }
 
-#footer .copyright{text-align: center; padding: 20px 0 40px;}
+#footer .copyright{text-align: center; padding-top: 20px;}
 #footer .copyright p{
     font-size: 14px;color: #373735;
     line-height: 20px;
